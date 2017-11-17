@@ -114,7 +114,10 @@ public class RockPaperScissors {
             System.out.println();
             startGame();
         } else {
-            System.out.println("Good Bye");
+            System.out.println(new String(new char[56]).replace("\0", "_"));
+            System.out.println(String.format("|%-10s|%-10s|%-10s|%-10s|%-10s|","Wins","Losses","Ties","Games","% Won"));
+            System.out.println(String.format("|%-10d|%-10d|%-10d|%-10d|%-10d|",4,2,2,8,50));
+            System.out.println(new String(new char[55]).replace("\0", " ̅"));
         }
     }
 
